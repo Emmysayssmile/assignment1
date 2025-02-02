@@ -2,29 +2,14 @@
 
 class Book:
     def __init__(self, author="", title=""):
-        """
-        Initializes a new instance of the Book class.
-        
-        Parameters:
-        author (str): The author of the book. Defaults to an empty string.
-        title (str): The title of the book. Defaults to an empty string.
-        """
         self.author = author
         self.title = title
 
     def display(self):
-        """
-        Prints the book information in the format:
-        "title, written by author".
-        """
         print(f"{self.title}, written by {self.author}")
-
-# Create the first Book object: Harry Potter and the Goblet of Fire by J. K. Rowling
 book1 = Book("J. K. Rowling", "Harry Potter and the Goblet of Fire")
-
-# Create the second Book object: Ivanhoe: A Romance by Walter Scott
 book2 = Book("Walter Scott", "Ivanhoe: A Romance")
 
-# Display information for both books
+
 book1.display()
 book2.display()
